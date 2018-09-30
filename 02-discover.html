@@ -1,0 +1,153 @@
+<section id="discover">
+
+    <section>
+        <h2>Découverte de l'environnement</h2>
+    </section>
+
+    <section>
+        <h3>Le shell</h3>
+        <div class="container">
+            <div class="col" style="flex: 2;">
+                <p>Un shell est une "coquille" positionnée autour d'un système d'expoitation (operating system ou OS). Il permet d'appeler des opérations qui seront ensuite exécutées par l'OS.</p>
+                <p>On peut distinguer 2 types de shell :</p>
+                <ul>
+                    <li>Les interfaces en ligne de commande (command-line interface ou CLI)</li>
+                    <li>Les interfaces graphiques (graphical user interface ou GUI)</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="assets/images/os-layers.png" alt="OS Layers">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Le shell</h3>
+        <p>Pour utiliser le CLI, il est nécessaire de connaitre les commandes disponibles ce qui représente un difficulté majeure pour la prise en main de l'outil.</p>
+        <p>Cependant, le CLI présente de nombreux avantages :</p>
+        <ul>
+            <li>Plus rapide pour exécuter des actions</li>
+            <li>Plus de possibilités qu'avec une interface graphique</li>
+            <li>Automatisation des tâches</li>
+            <li>Indispensable pour administrer un serveur</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Le shell</h3>
+        <p>Comparaison d'un copier / coller :</p>
+        <div class="container">
+            <div class="col">
+                <img src="assets/images/gui-cp.gif" alt="GUI">
+            </div>
+            <div class="col">
+                <img src="assets/images/cli-cp.gif" alt="CLI">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Windows VS MacOS VS Unix</h3>
+        <p>Les systèmes d'exploitation MAC OS et Unix utilisent tous les deux le shell bash (Bourne Again SHell) tandis que Windows utilise cmd ou PowerShell.</p>
+        <div class="container">
+            <div class="col">
+                <img src="assets/images/bash.png" alt="Bash">
+            </div>
+            <div class="col">
+                <img src="assets/images/powershell.png" alt="PowerShell">
+            </div>
+        </div>
+        <footer>
+            <a href="https://ohmyz.sh/" class="info" target="_blank">Il existe également des alternatives telle que ZSH pour Linux</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Bash VS CMD</h3>
+        <p>Les commandes disponibles dans bash et cmd sont souvent différentes :</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Action</th>
+                <th>CMD</th>
+                <th>Bash</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Copier un fichier</td>
+                <td><code class="language-cmd">copy</code></td>
+                <td><code class="language-bash">cp</code></td>
+            </tr>
+            <tr>
+                <td>Lister le contenu d'un dossier</td>
+                <td><code class="language-cmd">dir</code></td>
+                <td><code class="language-bash">ls</code></td>
+            </tr>
+            <tr>
+                <td>Créer un dossier</td>
+                <td><code class="language-cmd">mkdir</code></td>
+                <td><code class="language-bash">mkdir</code></td>
+            </tr>
+            </tbody>
+        </table>
+        <p>De plus, bash et cmd n'utilisent pas la même syntaxe pour définir un chemin vers un fichier :</p>
+        <table>
+            <thead>
+            <tr>
+                <th>CMD</th>
+                <th>Bash</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code class="language-bash">cd \Users\johndoe</code></td>
+                <td><code class="language-bash">cd /home/johndoe</code></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Utiliser bash sous Windows</h3>
+        <p>Depuis une mise à jour de Windows 10 en 2016, il est maintenant possible d'activer bash sur Windows :</p>
+        <div class="container">
+            <div class="col">
+                <h4>Activer le mode développeur</h4>
+                <ol>
+                    <li>Démarrer</li>
+                    <li>Paramètres</li>
+                    <li>Mise à jour et sécurité</li>
+                    <li>Pour les développeurs</li>
+                    <li>Mode développeur</li>
+                    <li>Redémarrez l'ordinateur</li>
+                </ol>
+            </div>
+            <div class="col">
+                <h4>Activer le bash</h4>
+                <ol>
+                    <li>Panneau de configuration</li>
+                    <li>Programmes</li>
+                    <li>Activer ou désactiver des fonctionnalités de windows</li>
+                    <li>Sous-système Windows pour linux </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Le terminal</h3>
+        <p>Lorsque vous démarrez l'application terminal, une invite de commande s'affiche alors avec une ligne comme celle-ci :</p>
+        <pre><code class="language-bash">username@computer-name:~$</code></pre>
+        <ul>
+            <li><code class="language-bash">username</code> : Nom de l'utilisateur en cours</li>
+            <li><code class="language-bash">computer-name</code> : Nom de la machine</li>
+            <li><code class="language-bash">~</code> : Position acutelle sur le disque dur</li>
+        </ul>
+        <p>Vous pouvez saisir une commande après le signe <code class="language-bash">$</code> et appuyer sur la touche "Entrée" pour l'exécuter.</p>
+        <footer>
+            <a href="#" class="info" style="font-size: 0.8em">Le caractère tilde "~" correspond au dossier "home" de l'utilisateur en cours</a>
+        </footer>
+    </section>
+
+</section>
