@@ -1,0 +1,99 @@
+<section id="browse-hd">
+
+    <section>
+        <h2>Parcourir le disque dur</h2>
+    </section>
+
+    <section>
+        <h3>Afficher l'aide d'une commande</h3>
+        <p>Le terminal vous permet de saisir des commandes afin d'effectuer des actions.</p>
+        <p>Pour savoir comment utiliser une commande et connaître les différentes options disponibles, vous pouvez utiliser la commande <code class="language-bash">man</code> suivit du nom de la commande que vous souhaitez utiliser :</p>
+        <pre><code class="language-bash">man pwd</code></pre>
+        <p><code class="language-bash">man</code> ouvre la documentation de la commande dans le terminal. Vous pouvez appuyer sur la touche <span class="keyboard-key">q</span>.</p>
+        <p>Vous pouvez également ajouter le paramètre <code class="language-bash">--help</code> ou <code class="language-bash">-h</code> pour afficher l'aide.</p>
+        <footer>
+            <a href="#" class="warning">Le paramètre -h ne fonctionne pas avec toutes les commandes</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Nettoyer le terminal</h3>
+        <p>Vous pouvez nettoyer le terminal avec la commande <code class="language-bash">clear</code>.</p>
+    </section>
+
+    <section>
+        <h3>Remonter dans l'historique des commandes</h3>
+        <p>Vous pouvez remonter dans l'historique des commandes en utilisant les touches <span class="keyboard-key">⬆</span> et <span class="keyboard-key">⬇</span>.</p>
+        <p>Vous pouvez également effectuer une recherche en utilisant la combinaison de touches <span class="keyboard-key">Ctrl</span> + <span class="keyboard-key">r</span>. Tapez ensuite la commande recherchée puis utilisez à nouveau la combinaison de touches <span class="keyboard-key">Ctrl</span> + <span class="keyboard-key">r</span> pour parcourir les résultats de recherche.</p>
+    </section>
+
+    <section>
+        <h3>Se situer</h3>
+        <p>Lorsque vous ouvrez le terminal, vous vous trouvez par défaut dans le dossier <strong>home</strong> (identifié par le caractère "~") de l'utilisateur.</p>
+        <p>A tout moment, vous pouvez afficher le chemin complet où vous vous situé en utilisant la commande <code class="language-bash">pwd</code>.</p>
+    </section>
+
+    <section>
+        <h3>Lister le contenu d'un dossier</h3>
+        <p>Pour lister le contenu d'un dossier, vous pouvez utiliser la commande <code class="language-bash">ls</code>.</p>
+        <p>Cette commande affiche les différents fichiers et dossiers directement dans la console. Le code couleur suivant permet de rapidement identifier le type des fichiers :</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Couleur</th>
+                <th>Signification</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Bleu</td>
+                <td>Répertoire</td>
+            </tr>
+            <tr>
+                <td>Vert</td>
+                <td>Fichier éxécutable</td>
+            </tr>
+            <tr>
+                <td>Bleu ciel</td>
+                <td>Lien symbolique</td>
+            </tr>
+            <tr>
+                <td>Rose</td>
+                <td>Fichier image</td>
+            </tr>
+            <tr>
+                <td>Rouge</td>
+                <td>Fichier archive</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Lister le contenu d'un dossier</h3>
+        <p>Vous pouvez également indiquer quel dossier vous souhaitez lister de la manière suivante :</p>
+        <pre><code class="language-bash">ls /var/www</code></pre>
+        <div class="instructions">
+            <ol>
+                <li>Affichez le contenu d'un dossier en affichant également les fichiers et dossiers cachés (commençant pas un point)</li>
+                <li>Affichez le contenu d'un dossier en affichant également les droits, la taille, la date de création...</li>
+                <li>Affichez le contenu d'un dossier en triant les fichiers et dossiers par date de modification</li>
+                <li>Afficher le contenu d'un dossier en affichant la taille des éléments en Ko, Mo ou Go</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h3>Se déplacer</h3>
+        <p>Pour vous déplacer dans l'arborescence de votre disque dur, vous pouvez utiliser la commande <code class="language-bash">cd</code>.</p>
+        <p>Vous pouvez également préciser le chemin vers lequel vous souhaitez vous déplacer :</p>
+        <pre><code class="language-bash">cd /var/www</code></pre>
+        <p>Si vous ne précisez pas de chemin, vous serez alors redirigé vers votre dossier <strong>home</strong>.</p>
+        <p>Le chemin que vous indiqué peut être en absolu (en commençant par le caractère "/") ou bien relatif (en indiquant directement le nom d'un dossier ou bien en commençant par les caractères "./").</p>
+        <p><code class="language-bash">cd ..</code> vous permet de remonter dans le dossier parent.</p>
+        <footer>
+            <a href="#" class="info">Utilisez l'autocomplétion avec la touche Tab</a>
+        </footer>
+    </section>
+
+</section>
