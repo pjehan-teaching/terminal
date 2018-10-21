@@ -1,0 +1,102 @@
+<section id="vim">
+
+    <section>
+        <h2>VIM (Vi IMproved)</h2>
+    </section>
+
+    <section>
+        <h3>Présentation de VIM</h3>
+        <div class="container">
+            <div class="col">
+                <p>VIM est un éditeur de texte open source permettant de modifier des fichiers directement dans le terminal.</p>
+            </div>
+            <div class="col">
+                <img src="assets/images/vim.png" alt="VIM">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Les modes de VIM</h3>
+        <p>VIM dispose de plusieurs modes. Les 3 modes principaux sont :</p>
+        <ul>
+            <li>Normal ou commande</li>
+            <li>Insertion</li>
+            <li>Ligne de commande</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Ouvrir un fichier</h3>
+        <p>Vous pouvez ouvrir un fichier avec la commande suivante :</p>
+        <pre><code class="language-bash">vim index.html</code></pre>
+        <footer>
+            <a href="#" class="info">Si le fichier n'existe pas, il sera créé</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Quitter VIM</h3>
+        <p>Pour quitter VIM, utilisez la commande <code class="language-bash">:q</code>.</p>
+        <p>Vous ne pouvez pas quitter un fichier si vous avez effectué des modifications. Pour forcer à quitter, saisissez la commande <code class="language-bash">:q!</code> (Les modifications ne seront pas enregistrées).</p>
+        <p>Pour sauvegarder et quitter, utilisez la commande <code class="language-bash">:x</code>.</p>
+    </section>
+
+    <section>
+        <h3>Mode normal</h3>
+        <p>En mode normal, lorsque vous appuyez sur des touches de votre clavier, vous exécutez des commandes.</p>
+        <p>Par exemple, si vous appuyez 2 fois sur la touche <span class="keyboard-key">d</span> de votre clavier, cela va <strong>supprimer la ligne</strong> sur laquelle se trouve votre curseur.</p>
+        <p>Appuyez 2 fois sur la touche <span class="keyboard-key">y</span> pour <strong>copier</strong> une ligne puis sur la touche <span class="keyboard-key">p</span> pour <strong>coller</strong>.</p>
+    </section>
+
+    <section>
+        <h3>Mode normal</h3>
+        <p>Appuyez sur la touche <span class="keyboard-key">0</span> pour aller en début de ligne.</p>
+        <p>Appuyez sur la touche <span class="keyboard-key">$</span> pour aller en fin de ligne.</p>
+        <p>Appuyez sur les touches <span class="keyboard-key">g</span> <span class="keyboard-key">g</span> pour aller au début du fichier.</p>
+        <p>Appuyez sur la touche <span class="keyboard-key">G</span> pour aller à la fin du fichier.</p>
+    </section>
+
+    <section>
+        <h3>Mode normal</h3>
+        <p>Appuyez sur la touche <span class="keyboard-key">u</span> (undo) pour annuler le dernier changement.</p>
+        <p>Appuyez sur les touches <span class="keyboard-key">Ctrl</span> + <span class="keyboard-key">r</span> (redo) pour annuler le dernier changement.</p>
+        <p>Appuyez sur la touche <span class="keyboard-key">.</span> pour répéter le dernier changement.</p>
+    </section>
+
+    <section>
+        <h3>Mode insertion</h3>
+        <p>Appuyez sur la touche <span class="keyboard-key">i</span> pour passer en mode insertion.</p>
+        <p>Vous pouvez alors saisir du texte comme dans un éditeur classique.</p>
+    </section>
+
+    <section>
+        <h3>Mode ligne de commande</h3>
+        <p>Le mode ligne de commande permet d'exécuter des commandes sur un fichier.</p>
+        <p>Il peut par exemple être utilisé pour <strong>rechercher dans un fichier</strong> en appuyant sur la touche <span class="keyboard-key">/</span> depuis le mode normal puis en saisissant le texte recherché.</p>
+        <footer>
+            <a href="#" class="info">Le mode ligne de commande est utilisé pour quitter VIM</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Modifier la configuration</h3>
+        <p>Vous pouvez modifier la configuration de VIM depuis le mode "ligne de commande" en saisissant par exemple :</p>
+        <pre><code class="language-bash">set number</code></pre>
+        <p>Vous pouvez également enregistrer votre configuration en créant un fichier ".vimrc" dans votre dossier home :</p>
+        <pre><code class="language-bash">vim ~/.vimrc</code></pre>
+        <footer>
+            <a href="https://dougblack.io/words/a-good-vimrc.html" class="info" target="_blank">Exemple de configuration</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Cheat Sheet</h3>
+        <ul>
+            <li><a href="https://vim.rtorr.com" target="_blank">https://vim.rtorr.com</a></li>
+            <li><a href="https://devhints.io/vim" target="_blank">https://devhints.io/vim</a></li>
+            <li><a href="https://www.fprintf.net/vimCheatSheet.html" target="_blank">https://www.fprintf.net/vimCheatSheet.html</a></li>
+        </ul>
+    </section>
+
+</section>

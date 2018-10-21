@@ -1,0 +1,39 @@
+<section id="package-manager">
+
+    <section>
+        <h2>Gestionnaire de paquets</h2>
+    </section>
+
+    <section>
+        <h3>Présentation</h3>
+        <p>Un gestionnaire de paquets (package manager) est un ensemble d'outils permettant de <strong>simplifier</strong> l'installation, la mise à jour et la suppression de programmes.</p>
+        <p>La commande <code class="language-bash">apt</code> est utilisée pour utiliser le gestionnaire de packets.</p>
+    </section>
+
+    <section>
+        <h3>Installation</h3>
+        <p>La commande <code class="language-bash">apt install [package-name]</code> permet d'installer un programme.</p>
+        <p>Le gestionnaire de paquets va alors rechercher le programme dans la liste des dépôts disponibles.</p>
+        <p>Il est possible d'ajouter un nouveau dépôt avec la commande suivante :</p>
+        <pre><code class="language-bash">add-apt-repository [repository-name]
+apt update</code></pre>
+        <p>La liste des dépôts est sauvegardée dans le fichier suivant :</p>
+        <pre><code class="language-bash">vim /etc/apt/sources.list</code></pre>
+        <footer>
+            <a href="#" class="danger">Ne pas ajouter des dépôts de source inconnues !</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Mise à jour</h3>
+        <p>Pour mettre à jour les paquets installés, vous pouvez utiliser la commande <code class="language-bash">apt upgrade</code></p>
+    </section>
+
+    <section>
+        <h3>Suppression</h3>
+        <p>Pour supprimer un paquet, vous pouvez utiliser la commande <code class="language-bash">apt remove [package-name]</code></p>
+        <p>Pour supprimer un paquet et ses fichiers de configuration associés, vous pouvez utiliser la commande <code class="language-bash">apt purge [package-name]</code></p>
+        <p>Pour supprimer les paquets qui ne sont plus utiles (car installé comme dépendances), vous pouvez utiliser la commande <code class="language-bash">apt autoremove</code></p>
+    </section>
+
+</section>

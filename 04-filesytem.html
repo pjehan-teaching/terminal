@@ -23,19 +23,29 @@
 touch index.html
 mv index.html public_html/index.php
 </code></pre>
+        <p>Pour copier un fichier, vous pouvez utiliser la commande <code class="language-bash">cp</code>.</p>
         <footer>
             <a href="#" class="info">La commande mv permet également de renommer un fichier</a>
         </footer>
     </section>
 
     <section>
-        <h3>Manipuler les fichiers</h3>
-        <p>Pour copier un fichier, vous pouvez utiliser la commande <code class="language-bash">cp</code>.</p>
+        <h3>Liens symboliques</h3>
+        <p>Sur les systèmes Unix, il est possible de créer 2 types de liens :</p>
+        <ul>
+            <li>Lien physique (hardlink) : Fonctionne uniquement avec les fichiers. Permet de créer plusieurs fichiers pointant vers le même fichier.</li>
+            <li>Lien symbolique (softlink ou symlink) : Fonctionne avec les fichiers et les dossiers. Permet de créer un lien vers un autre fichier ou dossier.</li>
+        </ul>
+        <img src="assets/images/hardlink-softlink.png" alt="Hardlink vs Softlink">
     </section>
 
     <section>
         <h3>Liens symboliques</h3>
-        <p></p>
+        <p>La commande <code class="language-bash">ln</code> permet de créer un lien et le paramètre <code class="language-bash">-s</code> permet de créer un lien symbolique :</p>
+        <pre><code class="language-bash">ln -s my-file my-soft-link</code></pre>
+        <footer>
+            <a href="#" class="info" style="font-size: 0.8em;">Le lien doit être fait en absolue ou bien relativement au fichier cible</a>
+        </footer>
     </section>
 
 </section>

@@ -1,0 +1,59 @@
+<section id="bonus">
+
+    <section>
+        <h2>Bonus</h2>
+    </section>
+
+    <section>
+        <h3>Exécuter à nouveau la dernière commande</h3>
+        <p>La commande <code class="language-bash">!!</code> permet de re-exéctuer la dernière commande.</p>
+        <p>Cela peut-être pratique si vous devez exécuter une commande en super utilisateur :</p>
+        <pre><code class="language-bash">sudo !!</code></pre>
+    </section>
+
+    <section>
+        <h3>Exécuter plusieurs commandes</h3>
+        <p>Vous pouvez exécuter plusieurs commandes en les séparant par <code class="language-bash">&&</code></p>
+        <pre><code class="language-bash">git add . && git commit -m "message" && git push origin master</code></pre>
+        <footer>
+            <a href="#" class="info" style="font-size: 0.8em">La commande précédente doit avoir fonctionnée pour que la suivante soit exécutée</a>
+        </footer>
+    </section>
+
+    <section>
+        <h3>Ouvrir un fichier de log</h3>
+        <p>Il est souvent utile d'observer la fin de fichier de log afin de voir si des erreurs se produisent.</p>
+        <p>Pour cela, vous pouvez utiliser la commande <code class="language-bash">tail</code> qui permet d'afficher la fin d'un fichier en mode "watch" :</p>
+        <code class="language-bash">tail -f /var/log/apache2/error.log</code>
+    </section>
+
+    <section>
+        <h3>Localiser un programme</h3>
+        <p>Pour savoir où se trouve le fichier correspondant à une commande, vous pouvez utiliser le commande <code class="language-bash">which</code> :</p>
+        <pre><code class="language-bash">which php
+which which</code></pre>
+    </section>
+
+    <section>
+        <h3>Retoucher une image</h3>
+        <p>Le programme <a href="https://www.imagemagick.org" target="_blank">imagemagick</a> permet d'effectuer des retouches d'images en ligne de commande.</p>
+        <p>Il est par exemple possible de supprimer les espaces blancs autour d'une image :</p>
+        <pre><code class="language-bash">convert input.png -trim output.png</code></pre>
+        <p>Réduire la qualité d'une image :</p>
+        <pre><code class="language-bash">convert input.png -quality 75 output.png</code></pre>
+        <p>Ou encore "merger" des fichiers PDF :</p>
+        <pre><code class="language-bash">convert pdf1.pdf pdf2.pdf output_pdf.pdf</code></pre>
+    </section>
+
+    <section>
+        <h3>Modifier des fichiers audio et vidéo</h3>
+        <p>Le programme <a href="https://www.ffmpeg.org" target="_blank">ffmpeg</a> permet de modifier des fichiers audio en ligne de commande.</p>
+        <p>Il est par exemple possible de convertir le format d'un fichier :</p>
+        <pre><code class="language-bash">ffmpeg -i input.mp4 output.avi</code></pre>
+        <p>D'extraire l'audio d'une vidéo :</p>
+        <pre><code class="language-bash">ffmpeg -i input.mp4 -vn -ab 320 output.mp3</code></pre>
+        <p>Ou encore "merger" des fichiers vidéo :</p>
+        <pre><code class="language-bash">ffmpeg -i "concat:input1.mp4|input2.mp4" -c copy output.mp4</code></pre>
+    </section>
+
+</section>

@@ -1,0 +1,136 @@
+<section id="permissions">
+
+    <section>
+        <h2>Les permissions</h2>
+    </section>
+
+    <section>
+        <h3>Comprendre les permissions</h3>
+        <p>La commande <code class="language-bash">ls -l</code> permet de lister le contenu d'un dossier en affichant des informations sur les permissions :</p>
+        <pre><code class="language-bash">drwxr-xr-x 2 myuser staff  4096 Jul  5 21:03 Desktop
+drwxr-xr-x 6 myuser staff  4096 Jul  5 17:37 Documents
+drwxr-xr-x 2 myuser staff  4096 Jul  5 13:45 Downloads
+-rw-rw-r-- 1 myuser staff  5120 Jun 27 08:28 customers.ods
+-rw-r--r-- 1 myuser staff  3339 Jun 27 08:28 todo
+-rwxr-xr-x 1 root   admin  2048 Jul  6 12:56 myscript.sh</code></pre>
+    </section>
+
+    <section>
+        <h3>Comprendre les permissions</h3>
+        <p>La 1ère colonnes contient les droits attribués à un élément.</p>
+        <p>La 1ère lettre (d) permet d'identifier les dossiers.</p>
+        <p>Ensuite, 3 groupes de 3 lettres permettent d'identifier les droits du <strong>propriétaire</strong>, du <strong>groupe</strong> et enfin du <strong>reste du monde</strong>.</p>
+        <p>La lettre "r" accorde les droits en <strong>lecture</strong>, "w" en <strong>écriture</strong> et "x" en <strong>exécution</strong>.</p>
+        <pre><code class="language-bash">drwxr-xr-x 2 myuser staff  4096 Jul  5 21:03 Desktop</code></pre>
+        <p><span style="color: blue;">d</span> <span style="color: red;">rwx</span> <span style="color: green;">r-x</span> <span style="color: purple;">r-x</span></p>
+        <p>Signifie qu'il s'agit d'un dossier, que le propriétaire à les droits en lecture, écriture et exécution et que le groupe et le reste du monde ont les droits uniquement en lecture et exécution.</p>
+    </section>
+
+    <section>
+        <h3>Comprendre les permissions</h3>
+        <p>La colonne suivante indique le nombre de liens physiques (hardlink) et ensuite est affiché le propriétaire (owner) du fichier ou dossier ainsi que le groupe :</p>
+        <pre><code class="language-bash">drwxr-xr-x 2 myuser staff  4096 Jul  5 21:03 Desktop</code></pre>
+        <p>Ici, le propriétaire est donc "myuser" et le groupe "staff".</p>
+    </section>
+
+    <section>
+        <h3>Changer les permissions</h3>
+        <div class="container">
+            <div class="col">
+                <p>La commande <code class="language-bash">chmod</code> permet de changer les droits.</p>
+                <p>Les droits peuvent être définis en utilisant une syntaxe numérique :</p>
+            </div>
+            <div class="col">
+                <table style="font-size: 0.6em">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Permission</th>
+                        <th>rwx</th>
+                        <th>Binary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>read, write and execute</td>
+                        <td>rwx</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>read and write</td>
+                        <td>rw-</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>read and execute</td>
+                        <td>r-x</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>read only</td>
+                        <td>r--</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>write and execute</td>
+                        <td>-wx</td>
+                        <td>011</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>write only</td>
+                        <td>-w-</td>
+                        <td>010</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>execute only</td>
+                        <td>--x</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>none</td>
+                        <td>---</td>
+                        <td>000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <pre><code class="language-bash">chmod -R 754 Documents</code></pre>
+        <p>La commande ci-dessus permettra de changer les droits de façon récursive sur le dossier "Documents".</p>
+    </section>
+
+    <section>
+        <h3>Changer les permissions</h3>
+        <p>La commande <code class="language-bash">chown</code> permet de modifier le propriétaire et le groupe :</p>
+        <pre><code class="language-bash">chown -R root:admin Documents</code></pre>
+        <p>La commande ci-dessus permettra de définir l'utilisateur "root" en tant que propriétaire et de donner les droits au groupe "admin".</p>
+    </section>
+
+    <section>
+        <h3>Changer d'utilisateur</h3>
+        <p>La commande <code class="language-bash">su</code> permet de s'authentifier dans le terminal avec un autre compte utilisateur.</p>
+        <pre><code class="language-bash">su root</code></pre>
+    </section>
+
+    <section>
+        <h3>La commande sudo</h3>
+        <div class="container">
+            <div class="col">
+                <p>La commande <code class="language-bash">sudo</code> permet d'exécuter une commande en utilisant les droits de l'utilisateur "root".</p>
+                <p>Cela permet d'améliorer la sécurité en avec pour objectif de n'utiliser les droits de super utilisateur <strong>uniquement lorsque cela est nécessaire</strong>.</p>
+            </div>
+            <div class="col">
+                <img src="assets/images/sudo.png" alt="sudo">
+            </div>
+        </div>
+    </section>
+
+</section>
