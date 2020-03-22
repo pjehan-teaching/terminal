@@ -1,4 +1,5 @@
 module.exports = {
   name: 'Terminal',
-  stylesheets: ['assets/css/style.css']
-}
+  stylesheets: [],
+  javascripts: ['assets/js/script.js']
+};

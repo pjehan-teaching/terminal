@@ -7,10 +7,10 @@
     <section>
         <h3>Afficher l'aide d'une commande</h3>
         <p>Le terminal vous permet de saisir des commandes afin d'effectuer des actions.</p>
-        <p>Pour savoir comment utiliser une commande et connaître les différentes options disponibles, vous pouvez utiliser la commande <code class="language-bash">man</code> suivit du nom de la commande que vous souhaitez utiliser :</p>
+        <p>Pour savoir comment utiliser une commande et connaître les différentes options disponibles, vous pouvez ensuite utiliser la commande <code class="language-bash">man</code> suivit du nom de la commande que vous souhaitez utiliser :</p>
         <pre><code class="language-bash">man pwd</code></pre>
-        <p><code class="language-bash">man</code> ouvre la documentation de la commande dans le terminal. Vous pouvez appuyer sur la touche <span class="keyboard-key">q</span>.</p>
-        <p>Vous pouvez également ajouter le paramètre <code class="language-bash">--help</code> ou <code class="language-bash">-h</code> pour afficher l'aide.</p>
+        <p><code class="language-bash">man</code> ouvre la documentation de la commande dans le terminal. Vous pouvez appuyer sur la touche <span class="keyboard-key">q</span> pour quitter.</p>
+        <p>Vous pouvez également ajouter le paramètre <code class="language-bash">--help</code> ou <code class="language-bash">-h</code> sur n'importe quelle commande pour afficher l'aide.</p>
         <footer>
             <a href="#" class="warning">Le paramètre -h ne fonctionne pas avec toutes les commandes</a>
         </footer>
@@ -25,6 +25,9 @@
         <h3>Remonter dans l'historique des commandes</h3>
         <p>Vous pouvez remonter dans l'historique des commandes en utilisant les touches <span class="keyboard-key">⬆</span> et <span class="keyboard-key">⬇</span>.</p>
         <p>Vous pouvez également effectuer une recherche en utilisant la combinaison de touches <span class="keyboard-key">Ctrl</span> + <span class="keyboard-key">r</span>. Tapez ensuite la commande recherchée puis utilisez à nouveau la combinaison de touches <span class="keyboard-key">Ctrl</span> + <span class="keyboard-key">r</span> pour parcourir les résultats de recherche.</p>
+        <footer>
+            <a href="#" class="danger">Ne pas saisir de mot de passe en clair dans le terminal !</a>
+        </footer>
     </section>
 
     <section>
@@ -98,7 +101,7 @@
 
     <section>
         <h3>Effectuer une recherche</h3>
-        <p>La commande <code class="language-bash">grep vous permet d'effectuer une recherche dans un fichier ou un dossier</code> :</p>
+        <p>La commande <code class="language-bash">grep</code> vous permet d'effectuer une recherche dans un fichier ou un dossier :</p>
         <pre><code class="language-bash">grep -r "texte recherché" ~/Downloads</code></pre>
     </section>
 

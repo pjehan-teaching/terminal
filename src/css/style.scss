@@ -1,0 +1,24 @@
+.reveal {
+
+    pre[class*="language-"] {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.6em;
+        &:not(.line-numbers) {
+            padding: 0.5em;
+        }
+        code {
+            padding: 0;
+        }
+    }
+
+    .keyboard-key {
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.1em 0.5em;
+        box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+        background-color: #f7f7f7;
+    }
+
+}
